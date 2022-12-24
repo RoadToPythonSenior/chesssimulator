@@ -14,5 +14,13 @@ class Figure(ABC):
         self.color = color
 
     @abstractmethod
+    def check_border(self, x , y, border):
+        pass
+
+    @abstractmethod
+    def check_other_figure(self, x, y):
+        pass
+
+    @abstractmethod
     def move(self, x, y):
         pass
